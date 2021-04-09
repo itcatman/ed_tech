@@ -5,6 +5,15 @@ app = Flask(__name__)
 server_time = 0
 Response_time = 0
 
+users = [
+    {'id': 0,
+     'name': 'Imran Akhmedov',
+     'password': '123',
+     'Class': '8',
+     'birthday': '08.11.2006'}
+    
+]
+
 #Routes
 @app.route('/')
 def hello_world():
@@ -20,6 +29,14 @@ def status():
 @app.route('/api/')
 def api():
     return "It's work!!!"
+
+@app.route('/api/users/register/',  methods=["GET"])
+def api_register_Json():
+    json_request = app.request.json
+    a_value = json_request["a_key"]
+    return "JSON value sent: " + a_value
+
+
 
 if __name__ == '__main__':
     app.run()
