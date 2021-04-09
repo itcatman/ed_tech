@@ -4,12 +4,12 @@
 Скоро
  
 ## Роли:
-Рамазан:  TeamLead
-Имран: FullStack
-Казанби: Backend
-Али: FrontEnd
-Тимур: FrontEnd
-Гаджи: Backend
+Рамазан:  TeamLead  
+Имран: FullStack  
+Казанби: Backend  
+Али: FrontEnd  
+Тимур: FrontEnd  
+Гаджи: Backend  
  
 ### Документация
 Скоро
