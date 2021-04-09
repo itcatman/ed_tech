@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request
 import datetime
+
 app = Flask(__name__)
 #Переменные
 server_time = 0
@@ -35,7 +36,19 @@ def api_register_Json():
     value = request.json
     return "JSON value sent: " + str(value)
 
-
+@app.route('/register', methods=["GET", "POST"])
+def register_user():
+    if request.method == 'POST':
+        mail = request.form.get('mail')
+        name = request.form.get('name')
+        if mail == 'xuy@chlen.ru':
+            return 'OK'
+        elif name == 'xuy':
+            return 'OK'
+        else:
+            return 'IDI NAHUY BLYAT'    
+    else:
+        return render_template('index.html', time= '0')
 
 if __name__ == '__main__':
     app.run()
