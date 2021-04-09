@@ -14,8 +14,8 @@ def hello_world():
 def status():
     server_time = datetime.datetime.now()
     Response_time = 'Coming soon'
-    return 'Server time:' + str(server_time) + ' '
-    return 'Response time:' + str(Response_time) + ''
+    return 'Server time:' + str(server_time) + ' \nResponse time:' + str(Response_time) + ' '
+
 
 @app.route('/api/')
 def api():
