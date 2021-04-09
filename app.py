@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 import datetime
 app = Flask(__name__)
 #Переменные
@@ -32,9 +32,8 @@ def api():
 
 @app.route('/api/users/register/',  methods=["GET"])
 def api_register_Json():
-    json_request = app.request.json
-    a_value = json_request["a_key"]
-    return "JSON value sent: " + a_value
+    value = request.json
+    return "JSON value sent: " + str(value)
 
 
 
