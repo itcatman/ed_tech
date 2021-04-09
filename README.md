@@ -12,6 +12,7 @@
 Гаджи: Backend  
  
 ### Документация
-Скоро
- 
+#### Structure of project
+![Structure](https://github.com/itcatman/ed_tech/blob/main/static/img/project_stucture.png)
+
 ### Дербент, 2021
