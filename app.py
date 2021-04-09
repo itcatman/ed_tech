@@ -18,14 +18,14 @@ users = [
 #Routes
 @app.route('/')
 def hello_world():
-    return render_template('/index.html', time = server_time)
+    return render_template('index.html', time = server_time)
 
 @app.route('/status')
 def status():
     server_time = datetime.datetime.now()
     Response_time = 'Coming soon'
-    return 'Server time:' + str(server_time) + ' \nResponse time:' + str(Response_time) + ' '
-
+    #    return 'Server time:' + str(server_time) + ' \nResponse time:' + str(Response_time) + ' '
+    return render_template('/status/status.html')
 
 @app.route('/api/')
 def api():
@@ -51,4 +51,4 @@ def register_user():
         return render_template('index.html', time= '0')
 
 if __name__ == '__main__':
-    app.run()
+    app.run(Debug=True)
