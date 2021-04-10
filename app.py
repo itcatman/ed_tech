@@ -1,5 +1,4 @@
 from flask import Flask, render_template, request, url_for
-import subprocess
 import datetime
 import hashlib
 import os
@@ -18,8 +17,7 @@ users = [
         'password': '123',
         'Class': '8',
         'birthday': '08.11.2006'
-    }
-    
+    } 
 ]
 
 #Routes
@@ -50,28 +48,7 @@ def register_user():
         name = request.form.get('name')
         password = request.form.get('password')
     
-    salt = os.urandom(32) # Генерация соли
-
-    
-    key = hashlib.pbkdf2_hmac('sha256', # Используемый алгоритм хеширования
-        password.encode('utf-8'), # Конвертируется пароль в байты
-        salt, # Предоставляется соль
-        100000 # Рекомендуется использовать хотя бы 100000 итераций SHA-256
-        db.register(nick, mail, key)
-        """check = db.check_nickname(name)
-        if check == 'OK':
-            m_check = db.check_mail(mail)
-            if m_check == 'OK':
-                pass
-            else:
-                pass
-        else:
-            pass
-"""
 
 
 if __name__ == '__main__':
     app.run()
-    subprocess.call(['json-server', 'db.json'])
-    app.jinja_env.globals.update(F=F)
-    #app.jinja_env.globals.update(F=F)

@@ -1,7 +1,6 @@
 """json-server db.json команда для запуска сервера и доступа к БД"""
-import requests, subprocess
+import requests
 import hashlib
-
 
 url = "http://localhost:3000/users" 
 
