@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request, url_for
+import subprocess
 import datetime
 import hashlib
 import os
@@ -9,7 +10,6 @@ server_time = 0
 Response_time = 0
 total = 1
 total_admin = 1
-
 
 users = [
     {
@@ -72,5 +72,6 @@ def register_user():
 
 if __name__ == '__main__':
     app.run()
+    subprocess.call(['json-server', 'db.json'])
     app.jinja_env.globals.update(F=F)
     #app.jinja_env.globals.update(F=F)

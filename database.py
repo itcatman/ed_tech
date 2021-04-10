@@ -1,10 +1,9 @@
 """json-server db.json команда для запуска сервера и доступа к БД"""
 import requests, subprocess
-
 import hashlib
 
+
 url = "http://localhost:3000/users" 
-subprocess.call(['json-server', 'db.json'])
 
 
 def get_req():
