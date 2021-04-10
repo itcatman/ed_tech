@@ -57,6 +57,10 @@
     margin: 5px 0;
     background-color: #242731;
 }
+.course-li:hover{
+transition:  all 0.3s ease-in-out;
+ background-color: #3F8CFF;
+}
 
 .course-container  ul li svg 
 {
