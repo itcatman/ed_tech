@@ -12,11 +12,13 @@ total_admin = 1
 
 
 users = [
-    {'id': 0,
-     'name': 'Imran Akhmedov',
-     'password': '123',
-     'Class': '8',
-     'birthday': '08.11.2006'}
+    {
+        'id': 0,
+        'name': 'Imran Akhmedov',
+        'password': '123',
+        'Class': '8',
+        'birthday': '08.11.2006'
+    }
     
 ]
 
