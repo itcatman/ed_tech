@@ -22,7 +22,7 @@ users = [
 ]
 
 #Routes
-@app.route('/')
+@app.route('/', methods=["GET, POST"])
 def hello_world():
     return render_template('index.html', time = server_time)
 
@@ -37,7 +37,7 @@ def status():
 def api():
     return "It's work!!!"
 
-@app.route('/api/users/register/',  methods=["GET"])
+@app.route('/api/users/register/',  methods=["GET", "POST"])
 def api_register_Json():
     value = request.json
     return "JSON value sent: " + str(value)

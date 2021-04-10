@@ -1,0 +1,86 @@
+body {
+    background: #1f1f1f;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .main-signin {
+    box-shadow: 0px 10px 20px #000;
+    width: 455px;
+    border-radius: 12px;
+    height: auto;
+    margin: 120px auto;
+  }
+  .main-signin .main-signin__head {
+    background: #242328;
+    border-bottom: 1px solid #2d2f32;
+    border-radius: 12px 12px 0 0;
+    box-shadow: 0px 1px 0px #000;
+    padding: 12px 0;
+  }
+  .main-signin .main-signin__head p {
+    color: #586069;
+    text-align: center;
+  }
+  .main-signin .main-signin__middle {
+    background: #1f1e23;
+    border-bottom: 1px solid #2d2f32;
+    border-top: 1px solid #2d2f32;
+    box-shadow: 0px 1px 0px #000;
+  }
+  .main-signin .main-signin__middle .middle__form {
+    margin: 40px 0 20px 0;
+  }
+  .main-signin .main-signin__middle .middle__form ::-webkit-input-placeholder {
+    color: #25262a;
+  }
+  .main-signin .main-signin__middle .middle__form :-moz-placeholder {
+    color: #25262a;
+  }
+  .main-signin .main-signin__middle .middle__form ::-moz-placeholder {
+    color: #25262a;
+  }
+  .main-signin .main-signin__middle .middle__form :-ms-input-placeholder {
+    color: #25262a;
+  }
+  .main-signin .main-signin__middle .middle__form input[type="text"], .main-signin .main-signin__middle .middle__form input[type="password"], .main-signin .main-signin__middle .middle__form input[type="submit"] {
+    background: #daf4fe;
+    border-radius: 5px 5px 0 0;
+    border: none;
+    color: #25262a;
+    display: block;
+    margin: 0 20px;
+    outline: none;
+    padding: 15px 0;
+    width: 90%;
+  }
+  
+  .main-signin .main-signin__middle .middle__form input[type="text"], .main-signin .main-signin__middle .middle__form input[type="password"] {
+    padding:15px 20px;
+    width:81%;
+  }
+  
+  .main-signin .main-signin__middle .middle__form input[type="password"] {
+    border-top: 1px solid #acabab;
+    border-radius: 0 0 5px 5px;
+  }
+
+  .main-signin .main-signin__middle .main-signin__role {
+    color:#f5f6f6;
+    margin-left: 14px;
+    margin-top: 10px
+  }
+  
+  .main-signin .main-signin__middle .middle__form input[type="submit"] {
+    background: #00aeef;
+    border-radius: 5px;
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #80d6f7;
+    color: #fff;
+    font-size: 18px;
+    margin-top: 15px;
+    cursor:pointer;
+    text-transform: uppercase;
+  }
+  .main-signin .main-signin__middle .middle__form input[type="submit"]:active {
+    background: #80d6f7;
+  }

@@ -1,0 +1,64 @@
+.course-container 
+{
+    width: 445px;
+    height: auto;
+
+}
+
+.course-container .course-content 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.course-container .course-ul:nth-child(1) 
+{
+    display: block;
+}
+.course-container .course-ul:nth-child(2){ display: none !important;}
+.course-container .course-ul:nth-child(3){ display: none !important;}
+.course-container .course-ul:nth-child(4){ display: none !important;}
+.course-container .course-ul:nth-child(5){ display: none !important;}
+
+
+
+.course-container .course-content p 
+{
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    margin-right: 1rem;
+}
+
+.course-container .course-content form select 
+{
+    outline: none;
+    background-color: #0a0a0a;
+    padding: 5px 2rem;
+    border-radius: 15px;
+    border: 1px solid rgb(43, 43, 43);
+    color: white;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+}
+
+.course-container  ul
+{
+    list-style: none;
+}
+
+.course-container  ul li 
+{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 3rem;
+    border-radius: 15px;
+    margin: 5px 0;
+    background-color: #242731;
+}
+
+.course-container  ul li svg 
+{
+    margin-right: 2rem;
+}

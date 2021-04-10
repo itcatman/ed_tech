@@ -1,0 +1,37 @@
+@import "block/menu.css";
+@import "block/main-container.css";
+@import "block/block-content.css";
+@import "block/card.css";
+@import "block/recommendations.css";
+@import "block/dash.css";
+@import "block/course.css";
+body,html 
+{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body 
+{
+    background-color: #1F1F1F;
+    display: flex;
+    font-family: 'Poppins', sans-serif; 
+}
+
+
+.card-course-container 
+{
+    display: flex;
+    justify-content: space-between;
+}
+.rec-dash-container 
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 
+font-family: 'Inter', sans-serif;
+font-family: 'Poppins', sans-serif; 
+*/

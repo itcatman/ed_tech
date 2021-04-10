@@ -1,0 +1,120 @@
+.recommendations 
+{
+    width: 620px;
+    margin-left: 2rem;
+    margin-top: 0rem;
+}
+
+.recommendations .title-rec 
+{
+    font-size: 22px;
+    font-weight: bold;
+
+}
+
+.recommendations .rec-container 
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.recommendations .rec-container .block-1 
+{
+    width: 190px;
+    height: 150px;
+    background-color: #242731;
+    border-radius: 25px;
+    cursor: pointer;
+    
+}
+
+.recommendations .rec-container .block-1 .title-block 
+{
+    font-size: 16px;
+    margin: 0 1rem;
+   
+}
+
+.recommendations .rec-container .block-1 .title-block p 
+{
+   
+   margin-bottom: 0;
+}
+
+.recommendations .rec-container .block-1 .time 
+{
+    font-size: 12px;
+    color: #808191;
+    margin-left: 1rem;
+   
+}
+
+.recommendations .rec-container .block-1 .time p 
+{
+    margin: 0;
+    padding: 0;
+}
+.recommendations .rec-container .block-1 .student
+{
+    font-size: 12px;
+    color: #808191;
+    margin-left: 1rem;
+    margin-top: 1.5rem;
+   
+}
+
+.recommendations .rec-container .block-1  .students-icon
+{
+    display: flex;
+    position: relative;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 5px;
+}
+
+.recommendations .rec-container .block-1  .students-icon .avatar 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.recommendations .rec-container .block-1  .students-icon .star 
+{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 1rem;
+}
+.recommendations .rec-container .block-1  .students-icon .avatar:nth-child(1)
+{
+    z-index: 0;
+    left: 0;
+}
+.recommendations .rec-container .block-1  .students-icon .avatar:nth-child(2)
+{
+    z-index: 1;
+    left: 10px;
+}
+.recommendations .rec-container .block-1  .students-icon .avatar:nth-child(3)
+{
+    z-index: 2;
+    left: 20px;
+}
+.recommendations .rec-container .block-1  .students-icon .avatar:nth-child(4)
+{
+    z-index: 3;
+    left: 30px;
+}
+.recommendations .rec-container .block-1  .students-icon .avatar:nth-child(5)
+{
+    z-index: 4;
+    left: 40px;
+}
+.recommendations .rec-container .block-1  .students-icon .avatar:nth-child(6)
+{
+    z-index: 5;
+    left: 50px;
+}
+

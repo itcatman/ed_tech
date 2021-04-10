@@ -1,0 +1,128 @@
+.dashboard 
+{
+    position: fixed;
+    width: 300px;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: #1A1A1A;
+}
+
+.dashboard .container-menu
+{
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+   
+}
+
+.dashboard .container-menu .logo 
+{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 30px;
+    
+    margin: 30px 0;
+    margin-bottom: 0;
+
+}
+
+.dashboard .container-menu .logo p
+{
+    margin: 0;
+    margin-right: 2.01rem;
+    color: red;
+    font-weight: bold;
+    
+}
+
+.dashboard .container-menu .block-link 
+{
+    width: 80%;
+    margin: 0;
+    padding: 0;
+}
+
+.dashboard .container-menu .block-link .links 
+{
+    width: 100%;
+    cursor: pointer;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    transition: all .3s ease-in-out;
+    padding: 1rem 0;
+    
+}
+.dashboard .container-menu .block-link .links:hover
+{
+    background-color: #3F8CFF;
+
+} 
+.dashboard .container-menu .block-link .links:hover a 
+{
+    color: white;
+    
+}
+.dashboard .container-menu .block-link .links .c1
+{
+    filter:drop-shadow(2px 4px 1px black) brightness(0.5);
+   
+} 
+.dashboard .container-menu .block-link .links:hover img 
+{
+    filter: drop-shadow(2px 4px 1px black) brightness(2);
+    
+}
+.dashboard .container-menu .block-link .links a img 
+{
+    transition: all .3s ease-in-out;
+    margin-right: 10px;
+    filter: drop-shadow(2px 4px 1px black);
+    width: 22px;
+}
+
+.dashboard .container-menu .block-link .links a 
+{
+   
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+    color: gray;
+    text-shadow: 4px 4px 6px black;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+.dashboard .container-menu .footer-block 
+{
+    display: flex;
+    position: relative;
+    margin-top: auto;
+    margin-left: auto;
+    margin-bottom: 3rem;
+    margin-right: 2rem;
+    font-size: 14px;
+}
+.dashboard .container-menu .footer-block .block-1
+{
+    margin-right: 1rem;
+}
+.dashboard .container-menu .footer-block .block-1 .rol 
+{
+    color: gray;
+}
+.dashboard .container-menu .footer-block .block-2 .arrow-1 a img
+{
+    transform: translate(0,4px);
+}
+.dashboard .container-menu .footer-block .block-2 .arrow-2 a img
+{
+    transform: translate(0,-4px) rotate(180deg);
+}
