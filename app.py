@@ -29,7 +29,7 @@ def status():
     Response_time = 'Coming soon'
     #    return 'Server time:' + str(server_time) + ' \nResponse time:' + str(Response_time) + ' '
     return render_template('/status/status.html', time=server_time, request=Response_time, total = total, total_admins = total_admin)
-
+    
 @app.route('/api/')
 def api():
     return "It's work!!!"
