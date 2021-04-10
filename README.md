@@ -11,6 +11,10 @@
 Тимур: FrontEnd  
 Гаджи: Backend  
  
+###Техническая информация  
+База данных: Json-server
+Фреймворк: Flask 
+
 ### Документация
 #### Structure of project
 ![Structure](https://github.com/itcatman/ed_tech/blob/main/static/img/project_stucture.png)
