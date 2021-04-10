@@ -16,6 +16,7 @@ margin-right: 3rem;
 margin-top: 1.5rem;
 }
 .notifications{
+    position: relative;
     cursor: pointer;
     width: 50px;
     height: 50px;
@@ -26,7 +27,26 @@ margin-top: 1.5rem;
     align-items: center;
     box-shadow: 2px 11px 26px -1px  rgba(0, 0, 0, 0.7);
 }
+.notifications:hover{
 
+}
+.notifications-svg{
+    width: 20px;
+    height: 20px;
+}
+.txt{
+    position: absolute;
+    background-color:#FF754C;
+    font-size:xx-small;
+    padding: 5px;
+    text-align: center;
+    width: 15px;
+    height: 15px;
+    font-size: 10px;
+    top: -3px;
+    right: -5px;
+    border-radius: 25px;
+}
 
 
 .block-title .title 
