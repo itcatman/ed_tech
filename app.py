@@ -1,67 +1,37 @@
-from flask import Flask, render_template, request, url_for
-import datetime
-import hashlib
-import os
-import json
+from flask import Flask, render_template, request, url_for, session , redirect
+from models import User
+import requests
+ 
 
 app = Flask(__name__)
-#Переменные
-server_time = 0
-Response_time = 0
-total = 1
-total_admin = 1
+url = 'http://localhost:3000/users'
 
-users = [
-    {
-        'id': 0,
-        'name': 'Imran Akhmedov',
-        'password': '123',
-        'Class': '8',
-        'birthday': '08.11.2006'
-    } 
-]
+@app.route('/')
+@app.route('/index', methods=["GET", "POST"])
+def index():
+    if session.get('logged_in'):
+        return render_template("reg.html")
+    else:
+        return render_template('index.html')
 
-#Routes
-@app.route('/', methods=["GET, POST"])
-def hello_world():
-    return render_template('index.html', time = server_time)
 
-@app.route('/status')
-def status():
-    server_time = datetime.datetime.now()
-    Response_time = 'Coming soon'
-    #    return 'Server time:' + str(server_time) + ' \nResponse time:' + str(Response_time) + ' '
-    return render_template('/status/status.html', time=server_time, request=Response_time, total = total, total_admins = total_admin)
-    
-@app.route('/api/')
-def api():
-    return "It's work!!!"
-
-@app.route('/api/users/register/',  methods=["GET", "POST"])
-def api_register_Json():
-    value = request.json
-    return "JSON value sent: " + str(value)
-
-@app.route('/register', methods=["GET", "POST"])
-def register_user():
+@app.route('/register/', methods=["GET", "POST"])
+def login():
     if request.method == 'POST':
-        mail = request.form.get('mail')
-        name = request.form.get('name')
+        name = request.form.get('username')
         password = request.form.get('password')
 
-@app.route('/api/admin', methods=["GET", "POST"])
-def admin_panel():
-    if request.method == 'POST':
-        pass
-    elif request.method == 'GET':
-        object = request.json
-        #return str(object)
-        table = [object]
-        return str(table)
+        new_user = User(name, password)
+        session.add(new_user)
+        requests.post(url, new_user.get_json())
         
-    else:
-        return redirect("/")
+        session.commit()
+        session['logged_in'] = True
+    
+    return render_template("register.html")
+
 
 
 if __name__ == '__main__':
     app.run()
+    app.secret_key = 'super_secret_key'
