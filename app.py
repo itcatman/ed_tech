@@ -57,7 +57,7 @@ def register_user():
         password.encode('utf-8'), # Конвертируется пароль в байты
         salt, # Предоставляется соль
         100000 # Рекомендуется использовать хотя бы 100000 итераций SHA-256
-
+        db.register(nick, mail, key)
         """check = db.check_nickname(name)
         if check == 'OK':
             m_check = db.check_mail(mail)
@@ -69,8 +69,6 @@ def register_user():
             pass
 """
 
-def F():
-    return redirect('https://google.com') 
 
 if __name__ == '__main__':
     app.run()
