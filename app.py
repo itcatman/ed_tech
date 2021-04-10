@@ -27,7 +27,7 @@ def status():
     server_time = datetime.datetime.now()
     Response_time = 'Coming soon'
     #    return 'Server time:' + str(server_time) + ' \nResponse time:' + str(Response_time) + ' '
-    return render_template('/status/status.html')
+    return render_template('/status/status.html', time=server_time, request=Response_time )
 
 @app.route('/api/')
 def api():
