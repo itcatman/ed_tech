@@ -1,6 +1,8 @@
 from flask import Flask, render_template, request, url_for
 import datetime
-
+import hashlib
+import os
+ 
 app = Flask(__name__)
 #Переменные
 server_time = 0
@@ -44,7 +46,17 @@ def register_user():
     if request.method == 'POST':
         mail = request.form.get('mail')
         name = request.form.get('name')
-        check = db.check_nickname(name)
+        password = request.form.get('password')
+    
+    salt = os.urandom(32) # Генерация соли
+
+    
+    key = hashlib.pbkdf2_hmac('sha256', # Используемый алгоритм хеширования
+        password.encode('utf-8'), # Конвертируется пароль в байты
+        salt, # Предоставляется соль
+        100000 # Рекомендуется использовать хотя бы 100000 итераций SHA-256
+
+        """check = db.check_nickname(name)
         if check == 'OK':
             m_check = db.check_mail(mail)
             if m_check == 'OK':
@@ -53,6 +65,7 @@ def register_user():
                 pass
         else:
             pass
+"""
 
 def F():
     return redirect('https://google.com') 
