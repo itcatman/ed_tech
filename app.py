@@ -1,10 +1,12 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, url_for
 import datetime
 
 app = Flask(__name__)
 #Переменные
 server_time = 0
 Response_time = 0
+
+
 
 users = [
     {'id': 0,
@@ -41,14 +43,20 @@ def register_user():
     if request.method == 'POST':
         mail = request.form.get('mail')
         name = request.form.get('name')
-        if mail == 'xuy@chlen.ru':
-            return 'OK'
-        elif name == 'xuy':
-            return 'OK'
+        check = db.check_nickname(name)
+        if check == 'OK':
+            m_check = db.check_mail(mail)
+            if m_check == 'OK':
+                pass
+            else:
+                pass
         else:
-            return 'IDI NAHUY BLYAT'    
-    else:
-        return render_template('index.html', time= '0')
+            pass
+
+def F():
+    return redirect('https://google.com') 
 
 if __name__ == '__main__':
-    app.run(Debug=True)
+    app.run()
+    app.jinja_env.globals.update(F=F)
+    #app.jinja_env.globals.update(F=F)
