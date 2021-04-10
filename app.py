@@ -1,37 +1,34 @@
-from flask import Flask, render_template, request, url_for, session , redirect
-from models import User
+from flask import Flask, render_template, request, url_for, session , redirect, make_response
 import requests
  
 
 app = Flask(__name__)
-url = 'http://localhost:3000/users'
+app.secret_key = 'jd0291udjsoidn-ada-sbdadbp1'
+
 
 @app.route('/')
-@app.route('/index', methods=["GET", "POST"])
+@app.route('/index')
 def index():
-    if session.get('logged_in'):
-        return render_template("reg.html")
+    if 'username' in session:
+        return render_template('index.html', name=session['username'])
     else:
-        return render_template('index.html')
+        return render_template('index.html', name='No session')
 
 
 @app.route('/register/', methods=["GET", "POST"])
 def login():
     if request.method == 'POST':
-        name = request.form.get('username')
-        password = request.form.get('password')
-
-        new_user = User(name, password)
-        session.add(new_user)
-        requests.post(url, new_user.get_json())
-        
-        session.commit()
-        session['logged_in'] = True
+        session['username'] = request.form['username']
+        # session['password'] = request.form['password']
+        return render_template('index.html', name=session['username'])
+        #return redirect(url_for('index'))
+    else:
+        return render_template('register.html')
     
-    return render_template("register.html")
+    #return render_template('register.html')
 
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
     app.secret_key = 'super_secret_key'
