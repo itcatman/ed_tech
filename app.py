@@ -55,7 +55,9 @@ def admin_panel():
         pass
     elif request.method == 'GET':
         object = request.json
-        return (object)
+        #return str(object)
+        table = [object]
+        return str(table)
         
     else:
         return redirect("/")
