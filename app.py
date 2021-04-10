@@ -2,7 +2,8 @@ from flask import Flask, render_template, request, url_for
 import datetime
 import hashlib
 import os
- 
+import json
+
 app = Flask(__name__)
 #Переменные
 server_time = 0
@@ -47,7 +48,17 @@ def register_user():
         mail = request.form.get('mail')
         name = request.form.get('name')
         password = request.form.get('password')
-    
+
+@app.route('/api/admin', methods=["GET", "POST"])
+def admin_panel():
+    if request.method == 'POST':
+        pass
+    elif request.method == 'GET':
+        object = request.json
+        return (object)
+        
+    else:
+        return redirect("/")
 
 
 if __name__ == '__main__':
