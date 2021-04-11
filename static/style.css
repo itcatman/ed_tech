@@ -39,3 +39,8 @@ font-family: 'Inter', sans-serif;
 font-family: 'Poppins', sans-serif; 
 */
 
+.out
+{
+    display: flex;
+    margin-right: 14rem;
+}
