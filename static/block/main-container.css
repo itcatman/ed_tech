@@ -9,7 +9,7 @@
 .main-container .main-content 
 {
     width: 100%;
-    display: flex;
+    
     overflow-x: hidden;
 }
 
