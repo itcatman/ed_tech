@@ -40,8 +40,29 @@ font-family: 'Inter', sans-serif;
 font-family: 'Poppins', sans-serif; 
 */
 
-.out
-{
+
+
+.log-in{
+    height: 55px;
+    cursor: pointer;
+    background-color: inherit;
+    border: none;
+    color: ivory;
+}
+.log-in:hover{
+    color:#3F8CFF ;
+}
+.log-out:hover{
+    color:#3F8CFF ;
+}
+.log-out{
+    height: 55px;
+    cursor: pointer;
+    background-color: inherit;
+    border: none;
+    color: ivory;
+}
+.out-form{
     display: flex;
-    margin-right: 14rem;
+    margin-right: 10px;
 }
