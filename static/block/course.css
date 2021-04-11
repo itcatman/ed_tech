@@ -12,18 +12,11 @@
     align-items: center;
 }
 
-.course-container .course-ul:nth-child(1) 
-{
-    display: block;
-}
-.course-container .course-ul:nth-child(2){ display: none !important;}
-.course-container .course-ul:nth-child(3){ display: none !important;}
-.course-container .course-ul:nth-child(4){ display: none !important;}
-.course-container .course-ul:nth-child(5){ display: none !important;}
 
 
 
-.course-container .course-content p 
+
+.course-container .course-content p
 {
     font-size: 16px;
     font-family: 'Inter', sans-serif;

@@ -5,6 +5,8 @@
 @import "block/recommendations.css";
 @import "block/dash.css";
 @import "block/course.css";
+@import "block/achivments.css";
+@import "block/media.css";
 body,html 
 {
     margin: 0;
@@ -31,7 +33,9 @@ body
     justify-content: space-between;
 }
 
+
 /* 
 font-family: 'Inter', sans-serif;
 font-family: 'Poppins', sans-serif; 
 */
+
