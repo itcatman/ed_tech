@@ -50,6 +50,12 @@
     margin: 5px 0;
     background-color: #242731;
 }
+.course-container  ul li .lvl 
+{
+    font-size: 12px;
+    opacity: .4;
+   margin-left: 10px;
+}
 .course-li:hover{
 transition:  all 0.3s ease-in-out;
  background-color: #3F8CFF;

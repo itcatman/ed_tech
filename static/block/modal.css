@@ -24,7 +24,7 @@
     width: 500px;
     height: 70vh;
     border-radius: 15px;
-    background-color: white;
+    background-color: #1f2124;
     margin: 0 auto;
     margin-top: 10rem;
     animation: show .5s ease-in-out;
@@ -62,11 +62,11 @@
     text-align: center;
     margin: 0 auto;
     font-weight: bold;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 .swal 
 {
-    color: black;
+    color: rgb(255, 255, 255);
 }
 .reyting 
 {
