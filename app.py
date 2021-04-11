@@ -3,7 +3,7 @@ import requests
  
 
 app = Flask(__name__)
-app.secret_key = 'jd0291udjsoidn-ada-sbdadbp1'
+app.secret_key = 'jd0sa1wjsoidn-ada-sdasdbdadbpd1'
 
 
 @app.route('/')
@@ -12,23 +12,18 @@ def index():
     if 'username' in session:
         return render_template('index.html', name=session['username'])
     else:
-        return render_template('index.html', name='No session')
+        return render_template('index.html')
 
 
 @app.route('/register/', methods=["GET", "POST"])
 def login():
     if request.method == 'POST':
         session['username'] = request.form['username']
-        # session['password'] = request.form['password']
+        session['password'] = request.form['password']
         return render_template('index.html', name=session['username'])
-        #return redirect(url_for('index'))
     else:
         return render_template('register.html')
-    
-    #return render_template('register.html')
-
 
 
 if __name__ == '__main__':
     app.run(debug=True)
-    app.secret_key = 'super_secret_key'

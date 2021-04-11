@@ -60,10 +60,10 @@
     transition: all .3s ease-in-out;
 }
 
-.achivments-contein .achivments-content .items-block:nth-child(1){background: url("../../img/achivments/medal-512\ 1.png") center/cover no-repeat; animation-delay: .5s;}
-.achivments-contein .achivments-content .items-block:nth-child(2){background: url("../../img/achivments/Frame\ 69.png") center/cover no-repeat;animation-delay: .7s;}
-.achivments-contein .achivments-content .items-block:nth-child(3){background: url("../../img/achivments/Слой\ 0\ 2.png") center/cover no-repeat;animation-delay: .10s;}
-.achivments-contein .achivments-content .items-block:nth-child(4){background: url("../../img/achivments\/Слой\ 0\ 3.png") center/cover no-repeat;animation-delay: .12s;}
+.achivments-contein .achivments-content .items-block:nth-child(1){background: url("../img/achivments/medal-512\ 1.png") center/cover no-repeat; animation-delay: .5s;}
+.achivments-contein .achivments-content .items-block:nth-child(2){background: url("../img/achivments/Frame\ 69.png") center/cover no-repeat;animation-delay: .7s;}
+.achivments-contein .achivments-content .items-block:nth-child(3){background: url("../img/achivments/Слой\ 0\ 2.png") center/cover no-repeat;animation-delay: .10s;}
+.achivments-contein .achivments-content .items-block:nth-child(4){background: url("../img/achivments\/Слой\ 0\ 3.png") center/cover no-repeat;animation-delay: .12s;}
 
 
 @keyframes fly 

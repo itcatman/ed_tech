@@ -25,14 +25,14 @@
                 <li class="links"><a href="status/main-4.html"><img src="../static/img/icon/4-icon.png" alt=""> Мой класс</a></li>
                 <li class="links"><a href="status/main-5.html"><img src="../static/img/icon/5-icon.png" alt=""> Достижения</a></li>
                 
-                <li class="links"><a href="#!"><img src="../static/img/icon/7-icon.png" alt=""> Настройки</a></li>
+                
             </ul>
             <div class="footer-block">
                 <div class="block"></div>
                 <span>0</span>
                 <div class="block-1">
                     <div class="name">{[Imran Akhmedov]}</div>
-                    <div class="rol">{[Ученик]}</div>
+                    <div class="rol">{[Ученик]} {[lvl 3]}</div>
                 </div>
             </div>
         </div>
@@ -44,7 +44,7 @@
         <div class="main-content">
             <div class="block-title">
                <div class="head">
-                    <div class="title"><p>Привет {[name]}</p></div>
+                    <div class="title"><p>{{ name }}</p></div>
                     <div class="sub-title"><p>Ближайшие события</p></div>
               
                     
@@ -55,7 +55,16 @@
             <input type="submit" value="Выход" class="log-out">
         </form>
                 <div class="notifications">
+<<<<<<< HEAD
                     <img src="../static/img/icon/notification.png" alt="" class="notification-png ">    
+=======
+                    <form action="/register/" method="POST" class="out">
+                        <input type="submit" value="Авторизация">
+                    </form>
+                    <svg class="notifications-svg" width="100%" height="100%" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M18 11V8C18 4.13401 14.866 1 11 1C7.13401 1 4 4.13401 4 8V11C4 14.3 1 15.1 1 17C1 18.7 4.9 20 11 20C17.1 20 21 18.7 21 17C21 15.1 18 14.3 18 11Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+>>>>>>> a6b1193b0fbe8f756e34cf90ab5d6de06cc833cc
                         <div class="txt">2</div>
                 </div>
                 
@@ -87,7 +96,7 @@
                   
                 </div>
                 <ul  class="course-ul">
-                    <li  class="course-li"><svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <li  class="course-li" id="swal-1"><svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="56" height="56" rx="16" fill="#FFA2C0"/>
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M28 44C36.8366 44 44 36.8366 44 28C44 19.1634 36.8366 12 28 12C19.1634 12 12 19.1634 12 28C12 36.8366 19.1634 44 28 44Z" fill="url(#paint0_linear)"/>
                         <g filter="url(#filter0_d)">
@@ -111,9 +120,10 @@
                         </defs>
                         </svg>
                          Математика</li >
+                        
                          
 
-                    <li class="course-li"><svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <li class="course-li" id="swal-2"><svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="56" height="56" rx="16" fill="#FFCE73"/>
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M28 44C36.8366 44 44 36.8366 44 28C44 19.1634 36.8366 12 28 12C19.1634 12 12 19.1634 12 28C12 36.8366 19.1634 44 28 44Z" fill="url(#paint0_linear)"/>
                         <g filter="url(#filter0_d)">
@@ -144,7 +154,7 @@
                         </defs>
                         </svg>
                          Английский</li >
-                    <li class="course-li"><svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <li class="course-li" id="swal-3"><svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="56" height="56" rx="16" fill="#A0D7E7"/>
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M28 44C36.8366 44 44 36.8366 44 28C44 19.1634 36.8366 12 28 12C19.1634 12 12 19.1634 12 28C12 36.8366 19.1634 44 28 44Z" fill="url(#paint0_linear)"/>
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M19 36.0022L19.1496 35.7921L26.226 22.3267L26.2409 22.1841L23.1216 16.308C22.8601 15.8158 22.1243 15.9403 22.0386 16.4913L19 36.0022Z" fill="#FFC24A"/>
@@ -165,7 +175,7 @@
                         </defs>
                         </svg>
                          Русский</li >
-                    <li class="course-li"><svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <li class="course-li" id="swal-4"><svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="56" height="56" rx="16" fill="#B2E2D7"/>
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M28 44C36.8366 44 44 36.8366 44 28C44 19.1634 36.8366 12 28 12C19.1634 12 12 19.1634 12 28C12 36.8366 19.1634 44 28 44Z" fill="url(#paint0_linear)"/>
                         <g filter="url(#filter0_i)">
@@ -314,8 +324,90 @@
     </div>
 
 
+
+    <div id="modal" class="modal modal-1 ">
+        
+       <div class="modal-container">
+        <div class="modal-close"><button class="close" href="#!">X</button></div>
+            <div class="swal swal-1-content">
+                <h1 class="title">Математика</h1>
+                <ul>
+                    <li><b>Присутствовал:</b> </li>
+                    <li>Да <input checked type="checkbox">  Нет <input type="checkbox"></li>
+                    <hr>
+                    <li> <b>Домашнее задание</b> </li>
+                    <li>стр. 150, упр. 76, 77, 79, 80</li>
+                    <hr>
+                    <li class="reyting"><b>Оценка: 68/100 </b></li>
+                    
+                </ul>
+            </div>
+       </div>
+    </div>
+    <div id="modal" class="modal modal-2 ">
+        
+    <div class="modal-container">
+        <div class="modal-close"><button class="close" href="#!">X</button></div>
+        <div class="swal swal-2-content">
+            <h1 class="title">Английский</h1>
+            <ul>
+                <li><b>Присутствовал:</b> </li>
+                <li>Да <input checked type="checkbox">  Нет <input type="checkbox"></li>
+                <hr>
+                <li> <b>Домашнее задание</b> </li>
+                <li>ex.9, ex.10, p. 23</li>
+                <hr>
+                <li class="reyting"><b>Оценка: 73/100 </b></li>
+                
+            </ul>
+        </div>
+    </div>
+    </div>
+    <div id="modal" class="modal modal-3 ">
+        
+        <div class="modal-container">
+            <div class="modal-close"><button class="close" href="#!">X</button></div>
+            <div class="swal swal-3-content">
+                <h1 class="title">Русский</h1>
+                <ul>
+                    <li><b>Присутствовал:</b> </li>
+                    <li>Да <input checked type="checkbox">  Нет <input type="checkbox"></li>
+                    <hr>
+                    <li> <b>Домашнее задание</b> </li>
+                    <li>стр. 20, упр. 28, 29,30</li>
+                    <hr>
+                    <li class="reyting"><b>Оценка: 40/100 </b></li>
+                    
+                </ul>
+            </div>
+        </div>
+        </div>
+
+        <div id="modal" class="modal modal-4 ">
+        
+            <div class="modal-container">
+                <div class="modal-close"><button class="close" href="#!">X</button></div>
+                <div class="swal swal-4-content">
+                    <h1 class="title">Информатика</h1>
+                    <ul>
+                        <li><b>Присутствовал:</b> </li>
+                        <li>Да <input checked type="checkbox">  Нет <input type="checkbox"></li>
+                        <hr>
+                        <li> <b>Домашнее задание</b> </li>
+                        <li>Подготовка к контрольной</li>
+                        <hr>
+                        <li class="reyting"><b>Оценка: 100/100 </b></li>
+                        
+                    </ul>
+                </div>
+            </div>
+            </div>
+    
+
+  
+
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    
     <script src="../static/app.js"></script>
 </body>
 </html>
