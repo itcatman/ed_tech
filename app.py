@@ -1,43 +1,32 @@
-from flask import Flask, render_template, request, url_for, session , redirect
-from models import User
+from flask import Flask, render_template, request, url_for, session , redirect, make_response
 import requests
  
 
 app = Flask(__name__)
-url = 'http://localhost:3000/users'
+app.secret_key = 'jd0291udjsoidn-ada-sbdadbp1'
 
+
+@app.route('/')
+@app.route('/index')
+def index():
+    if 'username' in session:
+        return render_template('index.html', name=session['username'])
+    else:
+        return render_template('index.html', name='No session')
 
 
 @app.route('/register/', methods=["GET", "POST"])
 def login():
     if request.method == 'POST':
-        #session['name'] = request.form.get('username')
-        #session['password'] = request.form.get('password')a
-        username = request.form.get('username')
-        password = request.form.get('password')
-
-        #cockie
-        res = make_response('Setting a cockie')
-        res.set_cockie('account', username, max_age=60*60*24*365*2)
-        return res
-
-        
-        #session.commit()
-        #session['logged_in'] = True
-    
-    return render_template("register.html")
-
-
-@app.route('/')
-@app.route('/index', methods=["GET", "POST"])
-def index():
-    if session.get('logged_in'):
-        return render_template("reg.html")
+        session['username'] = request.form['username']
+        # session['password'] = request.form['password']
+        return render_template('index.html', name=session['username'])
+        #return redirect(url_for('index'))
     else:
-        return render_template('index.html',
-        nick = session.name,
-        role = 'Ученик'
-        )
+        return render_template('register.html')
+    
+    #return render_template('register.html')
+
 
 
 if __name__ == '__main__':
