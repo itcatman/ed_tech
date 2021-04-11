@@ -65,3 +65,11 @@ transition:  all 0.3s ease-in-out;
 {
     margin-right: 2rem;
 }
+.select-day{
+    padding: 5px;
+    background-color: inherit;
+    color: ivory;
+}
+select option{
+    background-color: black;
+}
