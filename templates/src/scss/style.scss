@@ -1,0 +1,68 @@
+@import "block/menu.scss";
+@import "block/main-container.scss";
+@import "block/block-content.scss";
+@import "block/card.scss";
+@import "block/recommendations.scss";
+@import "block/dash.scss";
+@import "block/course.scss";
+@import "block/achivments.scss";
+@import "block/media.scss";
+@import "block/modal.scss";
+body,html 
+{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body 
+{
+    background-color: #1F1F1F;
+    display: flex;
+    font-family: 'Poppins', sans-serif; 
+}
+
+
+.card-course-container 
+{
+    display: flex;
+    justify-content: space-between;
+}
+.rec-dash-container 
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* 
+font-family: 'Inter', sans-serif;
+font-family: 'Poppins', sans-serif; 
+*/
+
+
+
+.log-in{
+    height: 55px;
+    cursor: pointer;
+    background-color: inherit;
+    border: none;
+    color: ivory;
+}
+.log-in:hover{
+    color:#3F8CFF ;
+}
+.log-out:hover{
+    color:#3F8CFF ;
+}
+.log-out{
+    height: 55px;
+    cursor: pointer;
+    background-color: inherit;
+    border: none;
+    color: ivory;
+}
+.out-form{
+    display: flex;
+    margin-right: 10px;
+}
