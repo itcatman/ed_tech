@@ -1,29 +1,8 @@
-@@include("header.html")
+@@include("blocks/header.html")
 <body>
     
     <!-- Menu -->
-    <div class="dashboard">
-        <div class="container-menu">
-            <div class="logo">Education <b>Tech</b><p>.</p></div>
-            <ul class="block-link">
-                <li class="links"><a href="index.html"><img class="c1" src="images/icon/1-icon.png" alt="">Главная</a></li>
-                <li class="links"><a href="main-2.html"><img src="images/icon/2-icon.png" alt=""> Мои интересы</a></li>
-                <li class="links"><a href="main-3.html"><img src="images/icon/3-icon.png" alt=""> Избранно</a></li>
-                <li class="links"><a href="main-4.html"><img src="images/icon/4-icon.png" alt=""> Мой класс</a></li>
-                <li class="links"><a href="main-5.html"><img src="images/icon/5-icon.png" alt=""> Достижения</a></li>
-                
-              
-            </ul>
-            <div class="footer-block">
-                <div class="block"></div>
-                <span>0</span>
-                <div class="block-1">
-                    <div class="name">{{ name }}</div>
-                    <div class="rol">{{ level  }}</div>
-                </div>
-            </div>
-        </div>
-    </div>
+    @@include("blocks/menu.html")
 
 
     <!-- Content -->
@@ -515,4 +494,4 @@
     </div>
 
 
-    @@include("footer.html")
+    @@include("blocks/footer.html")
