@@ -16,7 +16,7 @@ let path=
     },
     src:
     {
-        html: [source__folder + "/*.html", "!" + source__folder + "/_*.html"],
+        html: [source__folder + "/*.html", source__folder + "/blocks/*.html",  "!" + source__folder + "/_*.html"],
         css: [source__folder+"/scss/style.scss", "!" + source__folder + "/*.css"],
         js: source__folder+"/js/*.js",
         img: source__folder+"/images/**/*",
